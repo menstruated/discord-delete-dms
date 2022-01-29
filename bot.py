@@ -42,9 +42,6 @@ Client = commands.Bot(
 )
 Client.remove_command('help') 
 
-def getav(url, user):
-    return discord.Embed(title='Avatar', color=0x2f3136).set_image(url=url).set_footer(text=user)    
-
 @Client.event
 async def on_ready():
     
